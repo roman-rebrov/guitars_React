@@ -1,0 +1,69 @@
+// === HEADER ======
+header{
+    // position: fixed;
+    width: 100%;
+    max-width: 1287px;
+    z-index: 20;
+    top: 0;
+}
+.header-wrap{
+    width: 100%;
+    min-height: 3em;
+    // 
+    background-color: rgb(82, 79, 78);
+    background-color: rgb(48, 45, 44);
+    // background-color: rgb(216, 125, 94);
+}
+// =================
+nav{
+    margin-left: 10%;
+
+    width: 30%;
+    // border: solid;
+}
+.nav-wrap{
+    // border: solid;
+
+    a{
+        cursor: pointer;
+        color: whitesmoke;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        // 
+    }
+}
+
+// ==================
+.cart-wrap{
+    cursor: pointer; 
+    position: relative;
+    min-height: 3em;
+    width: 5em;
+    margin-right: 10%;
+    // 
+    background-color: rgb(134, 143, 133);
+    background-color: rgba(112, 110, 110, 0.945);
+
+}
+.addProdWrap{
+    position: absolute;
+    top: .3em;
+    right: .7em;
+    background-color: rgb(199, 65, 65);
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    // 
+    display: none;
+    // 
+    .addProduct{
+        color: white;
+    }
+}
+.fa-shopping-cart{
+    position: relative;
+    left: -0.1em;
+    color: rgb(223, 220, 219);
+    font-size: 1.4em;
+}

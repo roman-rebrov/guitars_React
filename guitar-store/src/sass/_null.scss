@@ -1,0 +1,111 @@
+// ==== MIXINS ======================>
+@mixin mej($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin flexVar($culumn, $just, $align) {
+    display: flex;
+    flex-direction: $culumn;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin flex-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-cul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin brd {
+    border: solid 1px #aaa59f;
+}
+
+// ==== VARS ======================>
+
+
+// ==== ANIMSTIONS ======================>
+
+
+// ==== BODY ======================>
+html, *{
+    margin: 0;
+    padding: 0;
+}
+*, body{
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    // background-color: rgba(240, 240, 240, 0.966);
+    background-color: rgba(134, 131, 127, 0.137);
+}
+:before, :after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    max-width: 1287px;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    position: relative;
+    // 
+    box-shadow: 1px 1px 11px 8px rgba(0, 0, 0, 0.185);
+    background-color: rgba(248, 248, 248, 0.568);
+}  
+.section-center-header{  
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+    // @include brd();
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // 
+    display: block;
+    // 
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.flex{
+    display: flex;
+}
+.flex-reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flx-row-bet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flx-row-bet-str{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.flx-cul-bet-str{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.flx-cul-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+// ==== MAIN CODE ==============================>
+

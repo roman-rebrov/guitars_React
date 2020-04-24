@@ -1,0 +1,101 @@
+// ============
+@keyframes disk{
+    0%{}
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+// === BANER ======
+// === LOGO ===
+.logo-wrap{
+    width: 25em;
+    height: 7em;
+    padding: 1em 2em;
+
+    // 
+    position: absolute;
+    top: 2em;
+    left: 0;
+    // border: solid 1px;
+    // 
+    background-color: rgba(61, 57, 55, 0.699);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.233);
+
+    // 
+    .logo{
+        color: #fff;
+        font-size: 4em;
+        font-family: 'Dancing Script', cursive;
+    }
+}
+// ============
+.baner{
+    position: relative;
+    width: 100%;
+    max-height: 35em;
+    overflow: hidden;
+
+    margin: auto;
+    margin-top: 1em;
+    background-color: #fff;
+    .img-wrap{
+        // width: calc(30em + 10vw);
+        width: 100%;
+        // position: relative;
+
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+}
+.text{
+    position: absolute;
+    height: 80px;
+    // border: solid;
+    z-index: 10;
+    color: whitesmoke;
+    padding: 1.2em;
+    span{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+
+    }
+}
+.text-1{
+    width: 270px;
+    bottom: 19em;
+    right: 5em;
+    // background-color: rgb(189, 203, 211);
+    background-color: rgba(68, 160, 132, 0.479);
+    // 
+    .txt-block-1{
+        font-size: 1.6em;
+        // position: absolute;
+        left: .5em;
+    }
+    span{
+        font-size: 4em;
+        color: rgba(255, 255, 255, 0.788);
+        position: absolute;
+        right: .3em;
+        display: block;
+        }
+}
+.text-2{
+    width: 150px;
+    background-color: rgba(255, 166, 0, 0.555);
+    // 
+    bottom: 8em;
+    left: 23em;
+    span{
+        font-size: 4em;
+        color: rgba(255, 255, 255, 0.788);
+        }
+    
+}
+.fa-compact-disc{
+    animation: 4s infinite linear disk;
+}
+// ============

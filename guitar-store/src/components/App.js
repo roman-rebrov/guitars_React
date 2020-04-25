@@ -1,6 +1,5 @@
 import React from 'react';
 // import browserHistoryLocation from 'browserHistoryLocation';
-// import {Switch, Route, Link} from 'react-router'
 import {BrowserRouter as Router,
   Link,
   Route,
@@ -23,8 +22,8 @@ class App extends React.Component{
                 <Header/>
                 <Baner/>
                   <Switch>
-                    <Route exactly path='/cat' component={Catalog}/>
-                    <Route exactly  path='/loc' component={Product}/>
+                    <Route exactly path='/home' component={Catalog}/>
+                    <Route exactly  path='/cat' component={Product}/>
                   </Switch>  
                 <Footer/>
 

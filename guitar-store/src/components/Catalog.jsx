@@ -1,7 +1,6 @@
 import React from 'react';
-// import '../catalog/products';
+import ProdCat from '../catalog/products.js'
 
-// console.log(catalog[1].name)   
 const ttt = ['This is a catalog!']
 function Catalog() {
     return (

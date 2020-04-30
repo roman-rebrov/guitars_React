@@ -10,7 +10,7 @@ function Catalog() {
                         <div className="producr-cart__title">
                             <span>
                                 {ProdCat[0].name}
-                            </span>
+                            </span>  
                         </div>
                         <div className="producr-cart__img flex-reg">
                             <img src={ProdCat[0].img[0]} alt=""/>

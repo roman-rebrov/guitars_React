@@ -1,7 +1,7 @@
 import React from 'react';
 import ProdCat from '../catalog/products.js'
 let ppp = ProdCat;
-                console.log(ProdCat);
+console.log(ProdCat);
 
 function Product() {
     return (

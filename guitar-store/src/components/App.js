@@ -18,11 +18,11 @@ import '../sass/App.scss';
 
 class App extends React.Component{
   render(){
-    return (
+    return (   
         <Router>
             <div className="App">
                 <Header/>
-                <Baner/>
+                <Baner/>  
                   <Switch>
                     <Route exactly path='/home' component={CatalogLine}/>
                     <Route exactly  path='/cat' component={Product}/>

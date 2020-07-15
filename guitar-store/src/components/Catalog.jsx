@@ -7,7 +7,6 @@ const ttt = ['This is a catalog!']
 function Catalog() {
     return (
         <div className="catalog">
-            { ttt[0] }
                    <div className="producr-cart">
                         <div className="producr-cart__title">
                             <span>
@@ -23,7 +22,7 @@ function Catalog() {
                         </div>
                     </div>
                     
-            <CatalogLine/>
+            {/* <CatalogLine/> */}
         </div>
     );
 

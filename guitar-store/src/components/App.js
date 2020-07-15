@@ -11,6 +11,8 @@ import Baner from './Baner';
 import Catalog from './Catalog';
 import Product from './Product';
 import Footer from './Footer';
+import CatalogLine from '../JS/catalogToHome'
+
 // CSS
 import '../sass/App.scss';
 
@@ -22,7 +24,7 @@ class App extends React.Component{
                 <Header/>
                 <Baner/>
                   <Switch>
-                    <Route exactly path='/home' component={Catalog}/>
+                    <Route exactly path='/home' component={CatalogLine}/>
                     <Route exactly  path='/cat' component={Product}/>
                   </Switch>  
                 <Footer/>

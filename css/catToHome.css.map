@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EAGF,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,OAAO,EAAE,KAAK;CAAG",
+    "sources": [
+        "../guitar-store/src/sass/catToHome.sass"
+    ],
+    "names": [],
+    "file": "catToHome.css"
+}

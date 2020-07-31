@@ -14,7 +14,7 @@ function catalogLine() {
         // return <div><img src={ProdCat[1].img[0]}/></div>
 
     };
-    return(
+    return( 
         <div className='loop'> 
             {/* {ProdCat.map((obj, i) => <div><img src={ProdCat[i].img[0]}/></div>)} */}
             {ProdCat.map((obj, i) => <Catalog/> )}

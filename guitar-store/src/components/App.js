@@ -26,7 +26,7 @@ class App extends React.Component{
                   <Switch>
                     <Route exactly path='/home' component={CatalogLine}/>
                     <Route exactly  path='/cat' component={Product}/>
-                  </Switch>  
+                  </Switch>    
                 <Footer/>
 
           </div>

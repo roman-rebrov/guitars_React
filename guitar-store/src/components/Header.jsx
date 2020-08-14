@@ -9,9 +9,9 @@ export default class Header extends React.Component {
                         <div className="header-wrap flx-row-bet">
                             <nav>
                                 <div className="nav-wrap flx-row-bet">
-                                    <Link  to='/home'>home</Link>
+                                    <Link  to='/'>home</Link>
                                     <Link  to='/cat'>catalog</Link>
-                                    <Link  to='loc'>local</Link>
+                                    <Link  to='/loc'>local</Link>
                                     <Link  to='/jj'>about</Link>
                                 </div>
                             </nav>

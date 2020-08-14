@@ -24,11 +24,10 @@ class App extends React.Component{
                 <Header/>
                 <Baner/>  
                   <Switch>
-                    <Route exactly path='/home' component={CatalogLine}/>
-                    <Route exactly  path='/cat' component={Product}/>
+                    <Route exact  path='/' component={CatalogLine}/>
+                    <Route   path='/cat' component={Product}/>
                   </Switch>    
                 <Footer/>
-
           </div>
       </Router>
     );

@@ -5,14 +5,14 @@ import CatalogLine from '../JS/catalogToHome'
 const ttt = ['This is a catalog!']
 function Catalog({prod}) {
     return (
-        <div className="catalog">
-                   <div className="producr-cart">
+        <div className="catalog" >
+                   <div className="producr-cart" >
                         <div className="producr-cart__title">
                             <span>
                                 {prod.obj.name}
                             </span>  
                         </div>
-                        <div className="producr-cart__img flex-reg">
+                        <div className="producr-cart__img flex-reg" onClick={()=> console.log(prod.obj.name)}>
                             <img src={prod.obj.img[0]} alt=""/>
                         </div>
                         <div className="producr-cart__cost">$  {prod.obj.prise}</div>

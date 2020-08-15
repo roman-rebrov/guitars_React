@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CatalogLine from '../JS/catalogToHome'
+import Header from './Header';
 
 
-const ttt = ['This is a catalog!']
 function Catalog({prod}) {
+    // const []
+    const addToCart = () =>{
+        console.log('OK');
+    }
     return (
         <div className="catalog" >
                    <div className="producr-cart" >
@@ -17,7 +21,7 @@ function Catalog({prod}) {
                         </div>
                         <div className="producr-cart__cost">$  {prod.obj.prise}</div>
                         <div className="producr-cart__btn">
-                            <div onClick={()=>console.log(prod.obj.name)} className="btn flex-reg">купить</div>
+                            <div onClick={()=> <Header count={{count:addToCart}} />} className="btn flex-reg">купить</div>
                         </div>
                     </div>    
                     

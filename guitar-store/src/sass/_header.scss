@@ -33,7 +33,9 @@ nav{
         // 
     }
 }
-
+.fa-shopping-cart{
+    text-decoration: none;
+}
 // ==================
 .cart-wrap{
     cursor: pointer; 
@@ -55,13 +57,14 @@ nav{
     height: 1.4em;
     border-radius: 50%;
     // 
-    display: none;
+    // display: none;
+    text-decoration: none;
     // 
     .addProduct{
         color: white;
     }
 }
-.fa-shopping-cart{
+.fa-shopping-cart{ 
     position: relative;
     left: -0.1em;
     color: rgb(223, 220, 219);

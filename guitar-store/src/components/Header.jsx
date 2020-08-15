@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-    const [cost , setCost] = useState(0);
-    const cartPage = () => {
-        setCost(cost + 1)
+class Header extends Component{
+    constructor(props){
+        super(props)
+        this.x = props
+        this.state = {
+             addedProducts : this.x.props.added
+        }
+
+    }
+    
+    cartPage() {
+        // setCost(cost + 1)
         // console.log(cost);
     }
-    // const render = () => {
+    render() {
+        console.log(this.x.props.added);
         return (
                 <div className="header">
                     <header>
@@ -18,12 +27,12 @@ const Header = () => {
                                     <Link  to='/cat'>catalog</Link>
                                     <Link  to='/loc'>local</Link>
                                     <Link  to='/jj'>about</Link>
-                                </div>
+                                </div> 
                             </nav>
                             <Link  to='/pay'   className="cart-wrap flex-reg">
                                 <i className="fas fa-shopping-cart"></i>
                                 <div className="addProdWrap flex-reg">
-                                    <span className="addProduct">{cost}</span>
+                                    <span className="addProduct">{this.state.addedProducts.length>0? this.state.addedProducts.length : 0}</span>
                                 </div>
                                 
                             </Link>
@@ -32,6 +41,6 @@ const Header = () => {
                 </div>
 
         )
-    // }
+    }
 }
 export default Header

@@ -17,14 +17,25 @@ import CatalogLine from '../JS/catalogToHome'
 import '../sass/App.scss';
 
 class App extends React.Component{
+  constructor(){
+    super()
+    this.state = {
+      addedProduct: []
+    }
+    this.handlerAddProd = this.handlerAddProd.bind(this)
+  }
+  handlerAddProd(){
+    this.state.addedProduct.push()
+  }
   render(){
-    return (   
+    return (    
         <Router>
             <div className="App">
-                <Header/>
+                <Header props={{added : this.state.addedProduct}}/>
                 <Baner/>  
+                <CatalogLine props={this.handlerAddProd}/>
                   <Switch>
-                    <Route exact  path='/' component={CatalogLine}/>
+                    {/* <Route exact  path='/' props={this.handlerAddProd} component={CatalogLine}/> */}
                     <Route   path='/cat' component={Product}/>
                   </Switch>    
                 <Footer/>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Component} from 'react';
 import CatalogLine from '../JS/catalogToHome'
 import Header from './Header';
 
@@ -8,6 +8,7 @@ function Catalog({prod}) {
     const addToCart = () =>{
         console.log('OK');
     }
+    console.log(prod);
     return (
         <div className="catalog" >
                    <div className="producr-cart" >
@@ -21,7 +22,7 @@ function Catalog({prod}) {
                         </div>
                         <div className="producr-cart__cost">$  {prod.obj.prise}</div>
                         <div className="producr-cart__btn">
-                            <div onClick={()=> <Header count={{count:addToCart}} />} className="btn flex-reg">купить</div>
+                            <div onClick={()=> {}} className="btn flex-reg">купить</div>
                         </div>
                     </div>    
                     

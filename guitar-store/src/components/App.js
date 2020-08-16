@@ -20,7 +20,8 @@ class App extends React.Component{
   constructor(){
     super()
     this.state = {
-      addedProduct: []
+      addedProduct: [],
+      btnText: 'Add'
     }
     this.handlerAddProd = this.handlerAddProd.bind(this)
   }
@@ -29,16 +30,18 @@ class App extends React.Component{
     this.state.addedProduct.map((item, i) =>{
       if(props === item){check = i}
     });
-    console.log(check);
+    // console.log(check);
     if (check === undefined){
       this.state.addedProduct.push(props)
+      // this.state.btnText = 'Remove'
     }else{
       this.state.addedProduct.splice(check,1)
+      // this.state.btnText = 'Add'
     }
     this.setState({
-      addedProduct : this.state.addedProduct
+      addedProduct : this.state.addedProduct,
+      btnText: this.state.btnText
     })
-    console.log(this.state.addedProduct);
   }
   render(){
     return (    
@@ -48,8 +51,11 @@ class App extends React.Component{
                 <Baner/>  
                 {/* <CatalogLine props={this.handlerAddProd}/> */}
                   <Switch>
-                    <Route exact  path='/'  component={() => <CatalogLine props={this.handlerAddProd}/>}/>
-                    <Route   path='/cat' component={() => <Product/>}/>
+                    <Route exact  path='/'  render={() => <CatalogLine
+                     props={this.handlerAddProd}
+                     btn={{text : this.state.btnText}}
+                     />}/>
+                    <Route   path='/cat' render={() => <Product/>}/>
                   </Switch>    
                 <Footer/>
           </div>

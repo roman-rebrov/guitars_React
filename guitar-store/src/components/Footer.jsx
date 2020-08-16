@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return(
         <footer>
-            <div class="footer-wrap flex-reg">
+            <div className="footer-wrap flex-reg">
                 <div className="footer-center flx-row-bet">
                     <div className="footer-stor-name">
                         <span>

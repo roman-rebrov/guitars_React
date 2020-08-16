@@ -12,7 +12,7 @@ class catalogLine extends Component {
     }
     render(){
         const handler = this.handlerProps
-        console.log(handler);
+        // console.log(handler);
 
         return( 
             <div className='loop' > 
@@ -24,3 +24,4 @@ class catalogLine extends Component {
 }
 
 export default catalogLine;
+// props={{handler}}

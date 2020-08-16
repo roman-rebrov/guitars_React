@@ -16,7 +16,7 @@ class Header extends Component{
         // console.log(cost);
     }
     render() {
-        console.log(this.x.props.added);
+        // console.log(this.x.props.added);
         return (
                 <div className="header">
                     <header>

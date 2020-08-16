@@ -30,7 +30,6 @@ class App extends React.Component{
     this.state.addedProduct.map((item, i) =>{
       if(props === item){check = i}
     });
-    // console.log(check);
     if (check === undefined){
       this.state.addedProduct.push(props)
       // this.state.btnText = 'Remove'
@@ -49,7 +48,6 @@ class App extends React.Component{
             <div className="App">
                 <Header props={{added : this.state.addedProduct}}/>
                 <Baner/>  
-                {/* <CatalogLine props={this.handlerAddProd}/> */}
                   <Switch>
                     <Route exact  path='/'  render={() => <CatalogLine
                      props={this.handlerAddProd}

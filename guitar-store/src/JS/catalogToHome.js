@@ -13,7 +13,7 @@ class catalogLine extends Component {
 
         return( 
             <div className='loop' > 
-                {ProdCat.map((obj, i) => <Catalog btn={this.props.btn.text} prod={{obj}} props={{handler}}/> )}
+                {ProdCat.map((obj, i) => <Catalog key={obj.id} btn={this.props.btn.text} prod={{obj}} props={{handler}}/> )}
             </div> 
         )
     }
